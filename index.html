@@ -8,54 +8,55 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0; /* Remove default margin */
+            margin: 0;
             background: #02060c;
             color: white;
-            display: flex; /* Use flexbox for centering */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            min-height: 100vh; /* Ensure full viewport height */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center;
+            min-height: 100vh;
         }
 
         .container {
-            max-width: 800px;
-            margin: 20px; /* Add margin back for spacing */
+            width: 95%; /* Occupy most of the screen width */
+            max-width: 600px; /* Set a maximum width */
+            margin: 20px auto; /* Center with auto margins */
             text-align: center;
             background: #fff;
-            padding: 30px; /* Increased padding */
-            border-radius: 15px; /* Increased border-radius */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+            padding: 20px; /* Slightly reduced padding */
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             color: #34495e;
         }
 
-        .business-header { /* Style for header section */
+        .business-header {
             display: flex;
-            align-items: center; /* Vertically align items */
-            justify-content: center; /* Center horizontally */
-            margin-bottom: 20px; /* Space between header and carousel */
+            flex-direction: column; /* Stack image and title */
+            align-items: center;
+            margin-bottom: 15px;
         }
 
         .profile-pic {
-            width: 120px; /* Slightly smaller profile picture */
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             object-fit: cover;
             overflow: hidden;
-            margin-right: 20px; /* Space between image and name */
+            margin-bottom: 10px; /* Space below image */
         }
 
         h1 {
             color: #3077bf;
-            margin: 0; /* Remove default h1 margin */
+            margin: 0;
+            font-size: 1.8em; /* Responsive font size */
         }
 
-        /* Carousel styling */
         .carousel-container {
             position: relative;
             width: 100%;
             overflow: hidden;
-            border-radius: 15px; /* Consistent border-radius */
-            margin-bottom: 20px; /* Space between carousel and contact info */
+            border-radius: 15px;
+            margin-bottom: 15px;
         }
 
         .carousel-slide {
@@ -65,17 +66,18 @@
 
         .carousel-slide img {
             min-width: 100%;
-            height: 400px; /* Slightly smaller image height */
+            height: 300px; /* Adjusted height for mobile */
             object-fit: cover;
-            border-radius: 15px; /* Consistent border-radius */
+            border-radius: 15px;
         }
 
         .contact-info {
-            text-align: left; /* Align contact info to the left */
+            text-align: left;
         }
 
         .contact-info p {
-            margin-bottom: 8px; /* Space between contact details */
+            margin-bottom: 6px;
+            font-size: 0.95em; /* Slightly smaller font */
         }
 
         .contact-info a {
@@ -84,19 +86,21 @@
         }
 
         .button {
-            padding: 12px 25px; /* Slightly larger button */
-            margin-top: 20px; /* Space above button */
+            padding: 10px 20px;
+            margin-top: 15px;
             background: #1a73e8;
             color: white;
             border: none;
-            border-radius: 10px; /* Consistent border-radius */
+            border-radius: 10px;
             cursor: pointer;
-            font-size: 16px; /* Slightly larger font */
-            transition: background-color 0.3s ease; /* Smooth transition */
+            font-size: 1em; /* Responsive font size */
+            transition: background-color 0.3s ease;
+            width: 100%; /* Button takes full width */
+            box-sizing: border-box; /* Include padding in width */
         }
 
         .button:hover {
-            background: #1561c4; /* Darker shade on hover */
+            background: #1561c4;
         }
     </style>
 </head>
